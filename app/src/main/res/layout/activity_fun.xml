@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    tools:context=".SensorActivity">
+
+    <!-- Estado de Conexión -->
+
+    <!-- Botón 1: Conectar (Azul) -->
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="154dp"
+        android:text="Estado: Desconectado"
+        android:textColor="#DC4315"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnConectar"
+        android:layout_width="158dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#055951"
+        android:text="conectar"
+        android:textAllCaps="false"
+        android:textColor="#ffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@id/btnDesconectar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEstado" />
+
+    <!-- Botón 2: Desconectar (Gris) -->
+    <Button
+        android:id="@+id/btnDesconectar"
+        android:layout_width="167dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#0D5B54"
+        android:text="Desconectar"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnConectar"
+        app:layout_constraintTop_toTopOf="@id/btnConectar" />
+
+    <!-- Botón 3: Prender Alarma (Verde) -->
+
+    <!-- Botón 4: Apagar Alarma (Rojo) -->
+
+    <Button
+        android:id="@+id/btnPrender"
+        android:layout_width="156dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#174366"
+        android:text="Prender\nAlarma"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toStartOf="@id/btnApagar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnConectar" />
+
+    <Button
+        android:id="@+id/btnApagar"
+        android:layout_width="171dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#174366"
+        android:text="Apagar\nAlarma"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnPrender"
+        app:layout_constraintTop_toBottomOf="@+id/btnDesconectar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
